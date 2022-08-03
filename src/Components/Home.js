@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import Navbar from './Navbar';
 import Typical from 'react-typical';
@@ -18,13 +19,13 @@ const Home = () => {
                 <div>
                     <span className='text-blue-400 lg:text-2xl font-bold'>And I am a </span>
                     <Typical
-                        steps={['Web Designer', 2000, 'Front-End Developer', 2000]}
+                        steps={['Web Designer', 2500, 'Front-End Developer', 2500, 'React Developer', 2500]}
                         loop={Infinity}
                         wrapper="p"
-                        className="inline-block text-red-100 font-bold md:text-indigo-50 lg:text-orange-100 lg:text-3xl"
+                        className="inline-block text-red-100 font-bold md:text-cyan-700 lg:text-cyan-900 lg:text-3xl"
                      />
                 </div>
-                <div className='border-2 border-gray-400 w-24 text-center mt-10 text-white bg-blue-500 hover:bg-blue-600 hover:font-bold text-lg rounded-md'><a href="mailto:vinaykumarprajapati52@gmail.com">Contact</a></div>
+                <div className='border-2 border-gray-400 w-28 text-center mt-10 text-white bg-blue-500 hover:bg-blue-600 hover:font-bold text-lg rounded-md'><a href="mailto:vinayprajapati398@gmail.com">Contact Me</a></div>
             </div>
         </main>
     </>;

@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Navbar = () => {
+    const [state, setState] = useState(false);
     const hemburger = () => {
         document.getElementById('hemburger').style.display = "block";
         document.getElementById('burger').style.display = "none";
         document.getElementById('close').style.display = "block";
+        setState(true);
     }
     const close = () => {
         document.getElementById('hemburger').style.display = "none";
         document.getElementById('burger').style.display = "block";
         document.getElementById('close').style.display = "none";
+        setState(false);
     }
 
     const mediaQuery = window.matchMedia('(max-width: 767px)')
@@ -22,13 +25,13 @@ const Navbar = () => {
     }
 
     return <>
-        <div className="w-full md:py-2 md:px-5 bg-gradient-to-r from-white to-black flex justify-between sticky top-0 left-0">
+        <div className={`w-full md:py-2 md:px-5 bg-gradient-to-r from-white to-black flex justify-between sticky top-0 left-0 transition-all ${state ? "h-60" : "h-[60px] md:h-auto"}`}>
             <div className="left flex h-10 py-3">
                 <img src="/images/V logo.png" className='h-10' alt="logo" />
                 <h1 className='leading-10 md:leading-10 text-indigo-700 text-lg md:text-2xl font-bold'><a href='#home'>Portfolio</a> </h1>
             </div>
-            <div className="right flex py-3">
-                <ul className='hidden transition-all duration-500 ease-in md:flex leading-10 space-x-4 mx-4 text-white' id='hemburger'>
+            <div className={`right flex py-3 `}>
+                <ul className='hidden md:flex leading-10 space-x-4 mx-4 text-white' id='hemburger'>
                     <li></li>
                     <li className='hover:text-blue-400 md:text-2xl duration-500' onClick={hidder}><a href="#home">Home</a></li>
                     <li className='hover:text-blue-400 md:text-2xl duration-500' onClick={hidder}><a href="#about">About</a></li>
