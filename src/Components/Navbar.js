@@ -40,7 +40,7 @@ const Navbar = () => {
                     <li className='hover:text-blue-400 md:text-2xl duration-500' onClick={hidder}><a href="#project">Projects</a></li>
                 </ul>
                 <span className='leading-10 font-bold cursor-pointer text-white px-2 text-xl md:hidden' id='burger' onClick={hemburger}>&#9776;</span>
-                <span className='hidden leading-10 font-bold cursor-pointer px-2 text-xl md:hidden' id='close' onClick={close}>&#10006;</span>
+                <span className='hidden leading-10 font-bold cursor-pointer px-2 text-xl md:hidden' id='close' onClick={close}><i className="fa text-white fa-window-close"></i></span>
             </div>
         </div>
     </>;

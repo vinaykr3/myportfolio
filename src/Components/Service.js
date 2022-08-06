@@ -12,17 +12,18 @@ const Service = () => {
                 <div className="card rounded w-72 h-40 bg-gray-700 hover:bg-red-500 text-center p-2">
                     <i className="fas fa-paint-brush text-white text-3xl"></i>
                     <h1 className='text-white font-bold text-xl'>Web Design</h1>
-                    <p className='text-white'>Web Page Design Using HTML CSS code and Figma Design! I know both! You can give me a chance for design </p>
+                    <p className='text-white'>I can change the design of figma and photoshop into code. </p>
                 </div>
                 <div className="card rounded w-72 h-40 bg-gray-700 hover:bg-red-500 text-center p-2">
                     <i className="fas fa-ad text-white text-3xl"></i>
                     <h1 className='text-white font-bold text-xl'>Advertising</h1>
-                    <p className='text-white'>Advertising you can adverties your product and i adverties all type product on my site gives a chance!</p>
+                    <p className='text-white'>
+Advertisement, you can advertise your product on my site, I will advertise your all type of product on my site, give me a chance!</p>
                 </div>
                 <div className="card rounded w-72 h-40 bg-gray-700 hover:bg-red-500 text-center p-2">
                     <i className="fab fa-react text-white text-3xl"></i>
                     <h1 className='text-white font-bold text-xl'>React Development</h1>
-                    <p className='text-white'>Hi I am a react developer and i code in react js and I can decode your old website in react base site and new site in react component Thank You!</p>
+                    <p className='text-white'>Hi i am a react developer and I can convert your old website to new react modern website and develop a new site in react. Thanks</p>
                 </div>
             </div>
         </main>
